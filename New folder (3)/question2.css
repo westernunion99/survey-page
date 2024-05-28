@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(./ttch.jpg);
+  background-size: cover;
+  margin-bottom: 50px;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+  color: aqua;
+}
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  margin-left: 450px;
+  margin-top: -269px;
+  font-weight: bold;
+}
+label {
+  border-top: 100px;
+  color: white;
+  margin-top: 100px;
+}
+textarea {
+  border-radius: 6px;
+  border: hidden;
+}

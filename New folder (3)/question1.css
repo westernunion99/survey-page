@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(./tch.jpeg);
+  background-size: cover;
+
+  margin-bottom: 50px;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+form {
+  font-weight: 400;
+  font-size: 20px;
+  color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  margin-left: 400px;
+  opacity: 1;
+}
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  margin-left: 400px;
+  margin-top: -270px;
+  color: gainsboro;
+  opacity: 1;
+}
+.next-btn {
+  color: white;
+  background-color: wheat;
+  padding: 3px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.next-btn:hover {
+  background-color: beige;
+}

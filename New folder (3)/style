@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Page</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="survey-container">
+      <h1>Westrn Survey Page</h1>
+      <form id="survey-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
+<br />
+const form = document.getElementById("survey-form"); const responseDiv =
+document.getElementById("response"); form.addEventListener("submit", (e) => {
+e.preventDefault(); const name = document.getElementById("name").value; const
+email = document.getElementById("email").value; const question1 =
+document.getElementById("question1").value; if (name && email && question1) {
+responseDiv.innerHTML = `
+<h2>Thank you, ${name}!</h2>
+<p>We appreciate your feedback.</p>
+<p>Your response: ${question1}</p>
+`; } else { responseDiv.innerHTML = "
+<p>Please fill out all fields.</p>
+"; } });
+<br />
+.survey-container { max-width: 800px; margin: 40px auto; padding: 20px;
+background-color: #f9f9f9; border: 1px solid #ccc; box-shadow: 0 0 10px rgba(0,
+0, 0, 0.1); } form { display: flex; flex-direction: column; align-items: center;
+} label { margin-bottom: 10px; } input[type="text"], input[type="email"] {
+padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; }
+input[type="submit"] { background-color: #4caf50; color: #fff; padding: 10px
+20px; border: none; border-radius: 5px; cursor: pointer; }
+input[type="submit"]:hover { background-color: #3e8e41; }
